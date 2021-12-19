@@ -45,7 +45,7 @@ console.log (array[array.length - 1]);
 */
 
 //Part 3 a "real-life" object
-
+/*
 const catBreeds = [{
     name: "Abyssinian",
     description: "The Abyssinian is easy to care for, and a joy to have in your home. They’re affectionate cats and love both people and other animals.",
@@ -96,5 +96,87 @@ const catBreeds = [{
     console.log("temperament cat 3:", catBreeds[2].temperament[4]);
 
     console.log("favourite food cat 3:", catBreeds[2].favourite_food);
+*/
 
-    
+////// Function arguments: lesson
+
+ // passing an argument to a function
+  /*const heat = function (item) {
+      console.log("I'm heating " + item);
+      // lot of code
+      // lot of code
+      // lot of code
+      console.log("Ping! your " + item + " is heated")
+  }
+
+  const main_course = "pasta";
+  const dessert = "cake";
+  
+  heat(main_course);
+  heat(dessert);
+*/
+/*
+const multiply = function (numberA, numberB) {
+    console.log(numberA * numberB);
+
+};
+multiply(3,4);
+
+const age = 5;
+const dogYearsFactor = 7;
+multiply(age, dogYearsFactor);
+*/
+/*
+const calculateAverage = function (numbers) {
+    // calculate average
+    const average = numbers.reduce((total, n) => total + n) / numbers.length
+    console.log(average);
+};
+    const grades = [6,7,8,9,5,6,7,8];
+    calculateAverage(grades);
+
+    const ages = [16, 22, 50, 100, 34];
+    calculateAverage(ages);
+*/
+/*
+if (typeof module !== 'undefined' && module.exports) {
+	console.log('this script is running in Node.js');
+} else {
+	console.log('this script is not running in Node.js');
+}
+*/
+//Exercise Function Arguments
+//No arguments
+const paintingWall = function (paint) {
+    console.log("The wall is painted red");
+}
+paintingWall();
+
+//Single argument
+const paintingBedroomWall = function (color) {
+    console.log("The wall is painted " + color);
+}
+paintingBedroomWall("green");
+paintingBedroomWall("yellow");
+// emty makes answer undefined
+paintingBedroomWall();
+
+//Multiple arguments
+const paintingKitchenWall = function (whatWall , color) {
+    console.log("The " + whatWall, "wall is painted " + color);
+}
+paintingKitchenWall("north", "blue");
+paintingKitchenWall("south", "orange");
+// Yes order of arguments matters
+paintingKitchenWall("blue", "north");
+
+// Answer text/codes:
+//console.log(`The wall has been painted ${color}`); 
+// String interpolation
+//console.log(`The ${whichWall} wall has been painted ${color}`); 
+// String interpolation
+//console.log(`The ${whichWall} wall has been painted ${color}`); 
+// String interpolation
+//console.log(`The ${whichWall} wall has been painted ${color}`); 
+// String interpolation
+//The end
