@@ -147,7 +147,7 @@ if (typeof module !== 'undefined' && module.exports) {
 */
 //Exercise Function Arguments
 //No arguments
-const paintingWall = function (paint) {
+/*const paintingWall = function (paint) {
     console.log("The wall is painted red");
 }
 paintingWall();
@@ -180,3 +180,72 @@ paintingKitchenWall("blue", "north");
 //console.log(`The ${whichWall} wall has been painted ${color}`); 
 // String interpolation
 //The end
+*/
+/*
+//Function basics: return statement
+// 1 return value stops a function
+// 2 goes back to were the function was called
+// 3 returns a value
+const add = function(number1, number2) {
+    const sum = number1 + number2;
+    return sum; // only inside function
+
+};
+const result = add(4,5);
+console.log(result);
+
+//
+const doubleArray = function(numbers) {
+    const doubled = numbers.map(n => n * 2);
+    return doubled;
+};
+const result2 = doubleArray([1,2,3]);
+console.log(result2);
+//deze doet het niet. moet zijn Bees!!!
+const scream = function(sentence) {
+    console.log("${sentence}!!!");
+    return sentence;
+};
+const result3 = scream("Bees");
+console.log(result3);
+*/
+
+
+const number = 99
+
+let numberMsg = "false"
+
+
+if (number >= 100) {
+    numberMsg = "true";
+}
+    console.log (numberMsg);
+    // function that produces something
+
+
+let maxPeople = 250,
+currentPeople = 150,
+agePerson = 16
+
+maxPeopleMsg = "It's too busy now, come back later";
+currentPeopleMsg = "come in";
+agePersonMsg = "This is a club for adults";
+
+//if (agePerson >=1 && agePerson <= 18) {
+  //  agePersonMsg = "This is a club for adults";
+//}
+//if (currentPeople <=250)
+//    currentPeopleMsg = "come in";
+
+//if (maxPeople <= 251) {
+ //   maxPeopleMsg = "It's too busy now, come back later";
+//}
+if (agePerson >=18 && currentPeople <=  250 && maxPeople <= 251);
+
+console.log(agePersonMsg);
+console.log(currentPeopleMsg);
+console.log(maxPeopleMsg);
+
+
+
+
