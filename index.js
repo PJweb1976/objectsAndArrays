@@ -357,8 +357,117 @@ console.log(calculateAverage(1,1,1,1,1,));
 console.log(calculateAverage(3,3,3,8,6,));
 console.log(calculateAverage(-10000,0,0,0,5000));
 */
+// Functions three ways to write them: lesson
+// function declarations
+// function expressions
+// arrow functions
+/*
+// function declaration
+function sayHello1() {
+    console.log("Hello 1");
+};
+sayHello1()
+
+// function expression
+const sayHello2 = function() {
+    console.log("Hello 2");
+};
+sayHello2()
+
+// arrow function (also a function expression)
+const sayHello3 = () => {
+    console.log("Hello 3");
+};
+sayHello3()
+
+// Best practices!!!
+// always use function expressions(normal or arrow)
+// don't mix function expressions and declarations
+// use arrow functions for very short functions (in general it's a good idea to write short functions)
+// use arrow functions when you're comfortable with them
+*/
+/*
+//youtube movie
+function calculateTip(meal_cost, drink_cost) {
+    let tip_size = (meal_cost + drink_cost) * 0.15;
+    console.log("The meal cost was: " + (meal_cost + drink_cost));
+    console.log("The tip should be: " + tip_size);
+    console.log("The total is: " + ((meal_cost + drink_cost) + tip_size));
+    return tip_size;
+}
+//calculateTip(10.00, 5.00); (is voor return value)
+let tip1 =calculateTip(10.00, 5.00);
+let tip2 =calculateTip(20.00,0.00)
+
+console.log("tip1: " + tip1);
+console.log("tip2: " + tip2);
+console.log("Total Tips: " + (tip1 + tip2));
+*/
+/*
+let writeMoreStuff = function() {
+    console.log("Writing more stuff");
+};
+writeMoreStuff();
+console.log(typeof writeMoreStuff);
+
+let writeMoreStuffAgain = function namedFunction() {
+    console.log("Writing more stuff again from named");
+}
+writeMoreStuffAgain();
+console.log(typeof writeMoreStuffAgain);
+*/
+/*
+thisExistsNoMatterWhat();// maakt niet uit waar je hem neer zet
+
+function thisExistsNoMatterWhat() {
+console.log("This ran succesfully.");
+}
+
+writeMoreStuff(); // werkt wel als je hem eronder zet
+let writeMoreStuff = function() {
+    console.log("Writing more stuff");
+};
+*/
+/*
+let arrowFunction = () => {
+    console.log("I'm an arrow function!");
+};
+arrowFunction();
+*/
 
 
+//Exercise: three ways to write functions
+
+
+const doSquareCalculation = function(number1, number2) {
+    const number1Squared = number1 * number1,
+     number2Squared = number2 * number2,
+     sum = number1Squared + number2Squared,
+     sumSquared = sum * sum;
+    console.log(sumSquared);
+    return sumSquared;
+};
+doSquareCalculation(2,4);
+doSquareCalculation(4,6);
+
+const doSquareCalculation2 = (number1, number2) => {
+    const number1Squared = number1 * number1,
+     number2Squared = number2 * number2,
+     sum = number1Squared + number2Squared,
+     sumSquared = sum * sum;
+    console.log(sumSquared);
+    return sumSquared;
+};
+doSquareCalculation(2,4);
+doSquareCalculation(4,6);
+
+const square = number => number * number;
+
+const doSquareCalculation3 = (number1, number2) =>
+    square(square(number1) + square(number2));
+
+    doSquareCalculation(2,4);
+    doSquareCalculation(4,6);
 
 
 
